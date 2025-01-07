@@ -30,8 +30,18 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
+require "themes.oledtheme"
 require "nvchad.autocmds"
 
 vim.schedule(function()
   require "mappings"
 end)
+
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "cpp",
+--   callback = function()
+--     vim.opt_local.cinoptions = { g = 1, w = 1}
+--   end
+-- })
+--
+vim.cmd("autocmd filetype cpp,hpp setlocal nowrap cindent cinoptions=g2,w1 tabstop=2 shiftwidth=2 expandtab");

@@ -36,6 +36,7 @@ return {
         "vim", "lua", "vimdoc",
         "html", "css", "cpp"
       },
+      indent = { enable = false },
     },
   },
 }
