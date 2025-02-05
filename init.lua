@@ -44,5 +44,5 @@ end)
 --   end
 -- })
 --
-vim.cmd("autocmd filetype cpp,hpp setlocal nowrap cindent cinoptions=g2,w1 tabstop=2 shiftwidth=2 expandtab formatoptions-=cro");
+vim.cmd("autocmd filetype cpp,hpp setlocal nowrap cindent cinoptions=g2,w1 tabstop=2 shiftwidth=2 expandtab formatoptions-=cro relativenumber");
 -- vim.cmd("autocmd filetype cpp,hpp setlocal nowrap cindent cinoptions=g2,w1 tabstop=2 shiftwidth=2 expandtab");
